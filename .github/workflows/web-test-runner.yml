@@ -73,7 +73,7 @@ jobs:
                   echo "version=$version" >> "$GITHUB_OUTPUT"
 
             - name: Restore playwright cache
-              uses: actions/cache@v4
+              uses: actions/cache@v6
               with:
                   path: |
                       ~/.cache/ms-playwright
@@ -177,7 +177,7 @@ jobs:
                   echo "version=$version" >> "$GITHUB_OUTPUT"
 
             - name: Restore playwright cache
-              uses: actions/cache@v4
+              uses: actions/cache@v6
               with:
                   path: |
                       ~/.cache/ms-playwright
