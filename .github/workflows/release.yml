@@ -110,7 +110,7 @@ jobs:
 
             - name: Commit & push
               if: ${{ steps.resolve_input.outputs.resolved != 'prerelease' }}
-              uses: actions-js/push@v1.4
+              uses: actions-js/push@v1.6
               with:
                   github_token: ${{ secrets.WORKFLOW_PAT }}
                   branch: ${{ github.ref_name }}
