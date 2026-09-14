@@ -30,7 +30,7 @@ jobs:
         runs-on: salesforce-Ubuntu
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v4
+              uses: actions/checkout@v7
 
             - name: Set old version (manual)
               if: github.event_name == 'workflow_dispatch'
