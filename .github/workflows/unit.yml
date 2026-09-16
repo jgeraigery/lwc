@@ -59,7 +59,7 @@ jobs:
             - name: Run unit tests in production mode
               run: yarn test:production --no-watch
             - name: Upload unit test coverage report
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v7
               with:
                   name: test-coverage-report
                   path: coverage/
