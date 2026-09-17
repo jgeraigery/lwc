@@ -21,7 +21,7 @@ jobs:
     # We run tests in parallel to speed up CI, with an arbitrary goal of ~20 minutes per job.
     integration-tests:
         name: Integration tests (${{ matrix.shadow_mode }} shadow; ${{ matrix.env || 'default env' }})
-        runs-on: ubuntu-22.04
+        runs-on: ubuntu-24.04
         strategy:
             fail-fast: false
             matrix:
@@ -139,7 +139,7 @@ jobs:
 
     hydration-tests:
         name: Hydration tests (${{ matrix.engine_server && 'engine-server' || 'SSR v2' }}; ${{ matrix.env || 'default env' }})
-        runs-on: ubuntu-22.04
+        runs-on: ubuntu-24.04
         strategy:
             fail-fast: false
             matrix:
