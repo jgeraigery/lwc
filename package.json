@@ -50,7 +50,7 @@
         "@swc/core": "~1.16.1",
         "@swc/helpers": "~0.5.23",
         "@types/babel__core": "^7.20.5",
-        "@types/node": "^22.19.5",
+        "@types/node": "^24.0.0",
         "@vitest/coverage-v8": "4.1.11",
         "@vitest/eslint-plugin": "1.6.27",
         "@vitest/spy": "4.1.11",
@@ -89,7 +89,7 @@
         "playground"
     ],
     "volta": {
-        "node": "24.11.1",
+        "node": "24.21.0",
         "yarn": "1.22.22"
     },
     "resolutions": {
